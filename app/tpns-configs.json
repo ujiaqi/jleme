@@ -1,0 +1,13 @@
+{
+    "tpns": {
+        "access_id": "1580002550",
+        "access_key": "AB6NMXL0YV3C"
+    },
+    "cn.fishei.jleme": {
+        "channel": {
+            "enable": true
+        }
+    },
+    "debug": false,
+    "version": "1.2.2.2"
+}

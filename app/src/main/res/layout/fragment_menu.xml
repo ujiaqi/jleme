@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.MenuFragment"
+    android:layout_above="@id/button">
+
+<!--    <com.baidu.mapapi.map.MapView-->
+<!--        android:id="@+id/bmapView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:clickable="true" />-->
+
+    <RelativeLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="38dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shoppingId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/menu_is_goods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="购物车空空，赶紧去逛逛吧"
+            android:textSize="15sp"
+            android:alpha="0.2"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F1F0F0" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp"
+
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合计："
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="￥"
+                    android:textColor="@color/colorLightRed"/>
+
+                <TextView
+                    android:id="@+id/shop_all_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0.0"
+                    android:textColor="@color/colorLightRed">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/shop_button"
+                    android:gravity="center"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:textSize="16sp"
+                    android:text="去结算"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/login_agree_button">
+
+                </Button>
+            </LinearLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_marginTop="44dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#F1F0F0"-->
+<!--                />-->
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+spring:
+  transaction:
+    rollback-on-commit-failure: true
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+#    password:
+    url: jdbc:mysql://localhost:3306/competition?useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .html
+    static-path-pattern: /static/**
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: cn.fishei.competition.bean
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+
+
+
+

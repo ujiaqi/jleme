@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../images/bg.jpg) no-repeat #000;
+    background-size: cover;
+    line-height: 1.15;
+}
+header{
+    position: relative;
+    height: 1.25rem;
+    background:url(../images/head_bg.png) no-repeat top center;
+    background-size: 100% 100%;
+    h1{
+        font-size: 0.475rem;
+        color: #fff;
+        text-align: center;
+        line-height: 1rem;
+    }
+    .showTime{
+        position: absolute;
+        right: 0.375rem;
+        top: 0;
+        line-height: 0.9375rem;
+        color: rgba(255,255, 255, 0.7);
+        font-size: 0.25rem;
+    }
+    .teamName{
+        position: absolute;
+        left: 0.375rem;
+        top: 0;
+        line-height: 0.9375rem;
+        color: rgba(255,255, 255, 0.7);
+        font-size: 0.25rem;
+    }
+}
+
+//页面主体盒子
+.mainbox {
+  min-width: 1024px;
+  max-width: 1920px;
+  padding: 0.125rem 0.125rem 0;
+  display: flex;
+  .column {
+    flex: 4;
+    &:nth-child(2) {
+      flex: 4;
+      margin: 0 0.125rem 0.1875rem;
+      overflow: hidden;
+    }
+  }
+}
+.panel {
+  position: relative;
+  height:4.8rem;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+  background: rgba(255, 255, 255, 0.04) url(../images/line\(1\).png);
+  padding: 0 0.1875rem 0.5rem;
+  margin-bottom: 0.1875rem;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+  }
+  .panel-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-bottom: 2px solid #02a6b5;
+      border-left: 2px solid #02a6b5;
+    }
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-bottom: 2px solid #02a6b5;
+      border-right: 2px solid #02a6b5;
+    }
+  }
+
+  h2 {
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.25rem;
+    font-weight: 400;
+    a {
+      margin: 0 0.1875rem;
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+  .chart {
+    height: 4.1rem;
+    //background-color: black;
+  }
+}
+    //数字模块
+    .no{
+      border: 1px solid rgba(25, 186, 139, 0.17);
+      margin: 0 .075rem .075rem;
+      background: rgba(101, 132, 226, 0.1);
+      padding: 0.1875rem;
+      
+      color: #fff;
+      font-size: .225rem;
+      font-weight: 400;
+
+      .no-h1{
+        ul{
+          display: flex;
+          li{
+            flex: 1;
+          }
+        }
+      }
+      .no-h2{
+        ul{
+          display: flex;
+          li{
+            flex: 1;
+          }
+        }
+      }
+    }
+
+    .panel1 {
+      position: relative;
+      height:7rem;
+      border: 1px solid rgba(25, 186, 139, 0.17);
+      background: rgba(255, 255, 255, 0.04) url(../images/line\(1\).png);
+      padding: 0 0.1875rem 0.5rem;
+      margin-bottom: 0.1875rem;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #02a6b5;
+        border-left: 2px solid #02a6b5;
+      }
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #02a6b5;
+        border-right: 2px solid #02a6b5;
+      }
+      .panel-footer1 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        &::before {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-bottom: 2px solid #02a6b5;
+          border-left: 2px solid #02a6b5;
+        }
+        &::after {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-bottom: 2px solid #02a6b5;
+          border-right: 2px solid #02a6b5;
+        }
+      }
+    
+      h2 {
+        height: 0.6rem;
+        line-height: 0.6rem;
+        text-align: center;
+        color: #fff;
+        font-size: 0.25rem;
+        font-weight: 400;
+        a {
+          margin: 0 0.1875rem;
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+      .chart {
+        height: 3rem;
+      }
+    }
+

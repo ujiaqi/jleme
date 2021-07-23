@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.fishei.competition.mapper.MenuMapper">
+    
+    <select id="queryHomeLists" resultType="goods">
+        select * from goods where category_id = 1
+    </select>
+
+    <select id="queryPotLists" resultType="goods">
+        select * from goods where category_id = 2
+    </select>
+
+    <select id="querySnackLists" resultType="goods">
+        select * from goods where category_id = 3
+    </select>
+
+    <select id="queryDrinksLists" resultType="goods">
+        select * from goods where category_id = 4
+    </select>
+
+    <select id="queryLikeGoods" resultType="goods">
+        select * from goods where name like "%"#{key}"%" or description LIKE "%"#{key}"%"
+    </select>
+
+
+</mapper>

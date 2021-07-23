@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.fishei.competition.mapper.AddressMapper">
+    <select id="queryAddr" parameterType="_int" resultType="address">
+        select * from user_address where user_id = #{userId}
+    </select>
+
+    <insert id="insertAddress" parameterType="address">
+        insert into user_address(user_id, name, gender, phone, latitude, longitude, province, city, district, street,
+        detail_addr, default_addr, status, add_time) values (#{userId}, #{name}, #{gender}, #{phone}, #{latitude}, #{longitude},
+          #{province}, #{city}, #{district}, #{street}, #{detailAddr}, #{defaultAddr}, #{status}, #{addTime})
+    </insert>
+
+    <delete id="deleteAddress" parameterType="_int">
+        delete from user_address where id = #{id}
+    </delete>
+
+    <select id="queryAddressById" parameterType="_int" resultType="address">
+        select * from user_address where id = #{id}
+    </select>
+</mapper>

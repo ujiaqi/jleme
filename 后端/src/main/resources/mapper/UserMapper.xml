@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.fishei.competition.mapper.UserMapper">
+    <sql id="insertFiled">
+        username, phone, password, salt, user_photo, email, state, join_time, last_login, tag, token
+
+    </sql>
+
+    <insert id="insertRegisterUser" parameterType="user">
+        insert into user (<include refid="insertFiled"></include>)
+        values(#{username},#{phone}, #{password}, #{salt}, #{userPhoto}, #{email}, #{state}, #{joinTime}, #{lastLogin}, #{tag}, #{token})
+    </insert>
+
+    <select id="selectFindUserByPhone" parameterType="string" resultType="user">
+        select * from user where phone = #{phone}
+    </select>
+
+    <update id="updateLoginByPhone">
+        update user set
+        last_login = #{lastLogin}, token = #{token}
+        where phone = #{phone}
+    </update>
+
+    <select id="selectCheckToken" resultType="user">
+        select * from user where token = #{token}
+    </select>
+</mapper>

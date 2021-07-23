@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MeOpinionActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="38dp">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:alpha="0.5"
+            android:src="@drawable/little"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意见反馈"
+            android:textSize="18dp"
+            android:textColor="#504F4F"
+            android:alpha="0.6"
+            android:layout_gravity="center"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/umeng_fb_replyContent"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#f1f2f3"
+            android:gravity="top"
+            android:hint="请输入您宝贵的意见"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="#dbdbdb"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
+            android:text="个人信息"
+            android:textColorHighlight="#797979"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            android:id="@+id/umeng_fb_contactInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="5dp"
+            android:background="#f1f2f3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入您的用户名"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="#dbdbdb"
+            android:textSize="15sp"
+            android:autofillHints="">
+        </EditText>
+
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/umeng_b_contactInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#f1f2f3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入您的账号"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="#dbdbdb"
+            android:textSize="15sp" >
+        </EditText>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#9A9F9F"
+            android:alpha="0.5"
+            android:text="提交反馈"
+            android:textSize="20dp"
+            android:layout_gravity="center">
+
+        </Button>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
