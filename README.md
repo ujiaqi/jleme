@@ -57,7 +57,7 @@
 平台：gitee
 ```
 
-![pic1](.\pic1.jpg)
+![pic1](pic1.jpg)
 
 
 
